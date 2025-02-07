@@ -1,0 +1,11 @@
+
+@use './scss/mixins';
+@use './scss/reset';
+@use './scss/vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+body {
+  background-color: vars.$bg-color;
+  color: vars.$main-color;
+}

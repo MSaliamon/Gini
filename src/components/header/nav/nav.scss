@@ -1,0 +1,13 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.nav {
+    &__list {
+        @include mixins.flex(row, center, center, 74px);
+    }
+    &__link {
+        @include mixins.PlusJakartaSans(14px, 400, 20px);
+        color: vars.$main-color;
+    }
+}

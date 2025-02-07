@@ -1,0 +1,27 @@
+@use '../../scss/mixins';
+@use '../../scss/reset';
+@use '../../scss/vars';
+
+.header {
+    @include mixins.flex(row, space-between, center, 0);
+    width: 100%;
+    padding: 17px 39px;
+    &-container {
+        @include mixins.flex(row, center, center, 64px);
+        &__reges {
+            @include mixins.flex(row, center, center, 8px);
+            &-login {
+                @include mixins.PlusJakartaSans(14px, 400, 20px);
+                background-color: vars.$sixth-color;
+                color: vars.$main-color;
+                padding: 14px 50px;
+            }
+            &-try {
+                @include mixins.PlusJakartaSans(14px, 700, 20px);
+                color: vars.$bg-color;
+                background-color: vars.$fourth-color;
+                padding: 14px 39px;
+            }
+        }
+    }
+}
