@@ -1,0 +1,13 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+
+.section2 {
+    @include mixins.flex(column, center, center, 35px);
+    &-container {
+        @include mixins.flex(row, center, center, 100px);
+        background-color: vars.$fourth-color;
+        padding: 37px 0px;
+    }
+}
