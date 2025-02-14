@@ -1,0 +1,59 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section4 {
+    @include mixins.flex(column, flex-start, flex-start, 144px);
+    background-color: vars.$fourth-color;
+    border-radius: 125px 0px 0px 0px;
+    padding: 98px 40px;
+    &-container {
+        @include mixins.flex(column, flex-start, flex-start, 157px);
+        &__title {
+            @include mixins.PlusJakartaSans(50px, 400, 60px);
+            width: 40%;
+            color: vars.$bg-color;
+        }
+        .section4-pagination {
+            @include mixins.flex(row, flex-start, flex-start, 81px);
+            &__link {
+                @include mixins.PlusJakartaSans(17px, 400, 20px);
+                color: vars.$bg-color;
+            }
+            &__link:active {
+                color: vars.$fifth-color;
+                text-decoration: underline;
+            }
+        }
+    }
+    &-container2 {
+        @include mixins.flex(row, flex-start, flex-start, 21px);
+        .section4-box {
+            @include mixins.flex(column, flex-start, flex-start, 108px);
+            background-color: rgba(255, 181, 149, 0.15);
+            padding: 40px;
+            border-radius: 17px;
+            &__sub-title {
+                @include mixins.PlusJakartaSans(15px, 400, 20px);
+                color: vars.$fifth-color;
+            }
+            &__title {
+                @include mixins.PlusJakartaSans(32px, 400, 40px);
+                color: vars.$bg-color;
+                width: 60%;
+            }
+            &__text {
+                @include mixins.Roboto(16px, 400, 28px);
+                color: vars.$bg-color;
+                width: 60%;
+            }
+            &__cont {
+                @include mixins.flex(row, flex-start, center, 15px);
+                &-link {
+                    @include mixins.Roboto(20px, 400, 20px);
+                    color: vars.$fifth-color;
+                }
+            }
+        }
+    }
+}
