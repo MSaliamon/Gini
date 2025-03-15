@@ -1,0 +1,16 @@
+@use '../../../../scss/mixins';
+@use '../../../../scss/reset';
+@use '../../../../scss/vars';
+
+.card {
+    @include mixins.flex(column, flex-start, flex-start, 25px);
+    &-textbox {
+        @include mixins.flex(column, flex-start, flex-start, 16px);
+        &__title {
+            @include mixins.PlusJakartaSans(23px, 400, 40px);
+        }
+        &__text {
+            @include mixins.Roboto(16px, 400, 28px);
+        }
+    }
+}

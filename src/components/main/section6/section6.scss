@@ -1,0 +1,16 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section6 {
+    @include mixins.flex(column, flex-start, flex-start, 113px);
+    padding: 191px 40px;
+    &__title {
+        @include mixins.PlusJakartaSans(45px, 400, 55px);
+        width: 40%;
+    }
+    &-container {
+        @include mixins.flex(row, flex-start, flex-start, 45px);
+        
+    }
+}
