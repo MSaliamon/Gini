@@ -1,0 +1,23 @@
+@use '../../scss/mixins';
+@use '../../scss/reset';
+@use '../../scss/vars';
+
+.footer {
+    @include mixins.flex(row, center, flex-start, 212px);
+    padding: 70px 30px 116px 30px;
+    background-color: vars.$main-color;
+    &-container {
+        @include mixins.flex(column, flex-start, flex-start, 50px);
+        &__text {
+            @include mixins.Roboto(14px, 400, 18px);
+            color: vars.$bg-color;
+        }
+    }
+    &-container2 {
+        @include mixins.flex(column, flex-start, flex-start, 23px);
+        &__link {
+            @include mixins.Roboto(16px, 400, 20px);
+            color: vars.$bg-color;
+        }
+    }
+}
