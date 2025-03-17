@@ -1,0 +1,30 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section8 {
+    @include mixins.flex(column, flex-start, flex-start, 82px);
+    padding: 108px 40px;
+    &__title {
+        @include mixins.PlusJakartaSans(40px, 400, 50px);
+    }
+    &-container {
+        @include mixins.flex(row, flex-start, flex-start, 25px);
+        .section8-box {
+            @include mixins.flex(column, flex-start, flex-end, 25px);
+            padding: 20px;
+            background-color: vars.$second-color;
+            width: 27%;
+            &__text {
+                @include mixins.PlusJakartaSans(16px, 400, 27px);
+            }
+            &__link {
+                @include mixins.flex(row, flex-start, center, 10px);
+                &-text {
+                    @include mixins.PlusJakartaSans(14px, 400, 20px);
+                    color: vars.$fourth-color;
+                }
+            }
+        }
+    }
+}
