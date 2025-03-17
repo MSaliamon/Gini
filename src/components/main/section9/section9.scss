@@ -1,0 +1,23 @@
+@use '../../../scss/mixins';
+@use '../../../scss/reset';
+@use '../../../scss/vars';
+
+.section9 {
+    @include mixins.flex(column, flex-start, flex-start, 25px);
+    padding: 50px 50px 0 50px;
+    background-color: vars.$second-color;
+    &__title {
+        @include mixins.PlusJakartaSans(45px, 400, 60px);
+        color: vars.$fourth-color;
+        width: 60%;
+    }
+    &__text {
+        @include mixins.Roboto(18px, 400, 25px);
+    }
+    &__btn {
+        @include mixins.PlusJakartaSans(16px, 400, 26px);
+        padding: 9px 31px;
+        background-color: vars.$main-color;
+        color: vars.$bg-color;
+    }
+}
